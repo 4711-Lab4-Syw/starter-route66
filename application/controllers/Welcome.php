@@ -13,17 +13,17 @@ class Welcome extends Application
 	 * Homepage for our app
 	 */
 	public function index()
-	{
-		// this is the view we want shown
-		$this->data['pagebody'] = 'homepage';
+    {
+        // this is the view we want shown
+        $this->data['pagebody'] = 'homepage';
 
-		// build the list of authors, to pass on to our view
-		$source = $this->quotes->all();
+        // build the list of authors, to pass on to our view
+        $source = $this->quotes->all();
 
-		// pass on the data to present, as the "authors" view parameter
-		$this->data['authors'] = $source;
+        // pass on the data to present, as the "authors" view parameter
+        $this->data['authors'] = $source;
 
-		$this->render();
-	}
+        $this->render();
+    }
 
 }
