@@ -1,28 +1,26 @@
 <?php
 /**
  * Created by PhpStorm.
- * User: Piyotr-K
+ * User: Lel
  * Date: 2018-01-31
- * Time: 11:47 AM
+ * Time: 11:59 AM
  */
 
 defined('BASEPATH') OR exit('No direct script access allowed');
 
-class Force extends Application
+class Must extends Application
 {
-
     function __construct()
     {
         parent::__construct();
     }
 
     /**
-     * Homepage for our app
+     * Echo Controller
      */
-    public function index()
+    public function wehave()
     {
-        // Show index 4
-        $this->show(4);
+        // Show index 5
+        $this->show(5);
     }
-
 }
